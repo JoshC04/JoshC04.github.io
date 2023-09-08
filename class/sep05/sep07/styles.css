@@ -1,0 +1,62 @@
+/* Structure */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-header {
+    margin: auto;
+    width: 80%;
+    background-color: burlywood;
+    padding: 5px;
+}
+
+/* Horizontal Navigation */
+
+.horizontal-nav ul {
+    padding-left: 0px;
+}
+
+.horizontal-nav li {
+    list-style-type: none;
+    margin: 0 5px;
+}
+
+.horizontal-nav a {
+    text-decoration: none;
+}
+
+/* Main Navigation */
+
+#main-nav {
+    display: flex;
+}
+
+/* Typography */
+
+h1 {
+    text-align: center;
+}
+
+/* Larger Resolution */
+
+@media only screen and (min-width: 768px) {
+
+    .horizontal-nav ul {
+        display: inline-flex;
+    }
+
+    #main-nav ul {
+        justify-content: center;
+    }
+
+    #user-nav ul {
+        justify-content: flex-end;
+    }
+
+    #user-nav {
+        position: relative;
+        top: 5%;
+        right: 200px;
+    }
+}
