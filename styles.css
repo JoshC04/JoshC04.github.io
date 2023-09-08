@@ -14,6 +14,29 @@ body {
     border-radius: 10px;
     margin: auto;
     box-shadow: 10px 10px lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content {
+    display: flex;
+    flex-grow: 0;
+    flex-direction: column;
+}
+
+.assignments {
+    background-color: #012E40;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px lightblue;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
 }
 
 /* Navigation */
@@ -40,6 +63,7 @@ th, td {
 /* Typography */
 h1 {
     color:#012E40;
+    text-align: center;
 }
 
 h2 {
@@ -52,10 +76,40 @@ h3 {
 
 p {
     color: #F2E3D5;
+    text-align: center;
 }
 
 /* Images */
 img {
     border: 5px solid #F2E3D5;
     border-radius: 5px;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 1500px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-content {
+        display: flex;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .assignments {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
 }
