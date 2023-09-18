@@ -1,0 +1,127 @@
+/* Body */
+
+body {
+    background-color: blueviolet;
+}
+
+/* Typography */
+
+h1 {
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h3 {
+    color: blueviolet;
+}
+
+#emoji {
+    font-size: xx-large;
+    position: relative;
+}
+.animate-info {
+    animation-name: animate-emoji;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+/* Main Content */
+
+.inner-sections {
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+    border: 5px solid blueviolet;
+    margin-bottom: 10px;
+    width: 33%;
+}
+#main-content {
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+button {
+    margin-bottom: 5px;
+}
+.image-hide {
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Animations */
+
+@keyframes animate-emoji {
+    0% {
+        top: 0px;
+        left: 50px;
+    }
+    25% {
+        top: 50px;
+        left: 0px;
+    }
+    50% {
+        top: 100px;
+        left: 50px;
+    }
+    75% {
+        top: 50px;
+        left: 100px;
+    }
+    100% {
+        top: 0px;
+        left: 50px;
+    }
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 768px) {
+
+    #main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .inner-sections {
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+    }
+
+    #animate-floor {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    #comment-div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .comment {
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+        border: 2px solid blueviolet;
+        border-radius: 2px;
+        margin-top: 5px;
+    }
+}
