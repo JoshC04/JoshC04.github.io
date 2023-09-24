@@ -1,0 +1,162 @@
+/* Body */
+
+body {
+    background-color: #F2E7DC;
+}
+
+#main-content {
+    background-color: #8C7370;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#fund-goal {
+    background-color: #8C7370;
+    padding: 10px;
+    border-radius: 5px;
+}
+#funds-display {
+    background-color: white;
+    width: 100px;
+    height: 400px;
+    margin-top: 15px;
+}
+
+#temp-div {
+    align-items: start;
+}
+
+#main-header {
+    background-color: #8C7370;
+}
+
+#oldest-items {
+    list-style-type: none;
+    margin-top: -10px;
+}
+#oldest-items li {
+    margin-bottom: 5px;
+    text-align: right;
+}
+#oldest-items a {
+    text-decoration: none;
+}
+
+.styles {
+    background-color: #BFACA4;
+    padding: 5px;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+/* Typography */
+
+h1 {
+    color: #260101;
+    padding: 10px;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Hamburger Menu */
+
+#nav-burger div {
+    width: 35px;
+    height: 5px;
+    background-color: #260101;
+    margin: 6px 0;
+}
+
+/* Navigation */
+
+#main-nav ul {
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+#main-nav li {
+    background: #BFACA4;
+    padding: 10px;
+    text-align: center;
+}
+#main-nav li:hover {
+    background: #8C7370;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: #260101;
+}
+
+.border {
+    border-bottom: 2px solid #260101;
+}
+
+/* Gradients */
+
+.gradient25 {
+    background-image: linear-gradient(0, red 100px, white 300px);
+}
+.gradient50 {
+    background-image: linear-gradient(0, red 200px, white 200px);
+}
+.gradient75 {
+    background-image: linear-gradient(0, red 300px, white 100px);
+}
+.gradient100 {
+    background-image: linear-gradient(0, red 400px, white 0px);
+}
+
+/* Media Query */
+
+@media (min-width: 900px) {
+
+    #main-items {
+        display: flex;
+    }
+    #main-items li {
+        flex: 1;
+    }
+    #main-items a {
+        border-bottom: 2px solid transparent;
+    }
+
+    #nav-burger div {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    #main-content {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+
+    #fund-goal {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+
+    #temp-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #oldest-items {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+}

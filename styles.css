@@ -14,16 +14,6 @@ body {
     border-radius: 10px;
     margin: auto;
     box-shadow: 10px 10px lightblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#main-content {
-    display: flex;
-    flex-grow: 0;
-    flex-direction: column;
 }
 
 .assignments {
@@ -33,10 +23,6 @@ body {
     box-shadow: 5px 5px lightblue;
     margin-right: 10px;
     margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-self: center;
 }
 
 /* Navigation */
@@ -87,7 +73,7 @@ img {
 
 /* Media Query */
 
-@media only screen and (min-width: 1500px) {
+@media (min-width: 900px) {
 
     body {
         display: flex;
@@ -101,16 +87,14 @@ img {
 
     #main-content {
         display: flex;
-        flex-grow: 0;
-        flex-shrink: 0;
         flex-wrap: wrap;
-        flex-direction: row;
         justify-content: space-between;
+        width: 100%;
     }
 
     .assignments {
         display: flex;
         flex-direction: column;
-        align-self: center;
+        width: 30%;
     }
 }
