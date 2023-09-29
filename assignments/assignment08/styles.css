@@ -1,0 +1,59 @@
+/* Body */
+
+body {
+    background-color: darkblue;
+}
+:root {
+    --color: 0;
+    --margin: 0px;
+    --background:url(../../images/Standing.jpg);
+}
+
+/* Running-Man */
+
+#running-man {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+#runner-img {
+    width: 100px;
+    height: 100px;
+    margin-left: var(--margin);
+    background-image: var(--background);
+    background-size: contain;
+}
+
+/* Temperature */
+
+#funds-section {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+#funds-display {
+    width: 200px;
+    height: 400px;
+    margin-top: 10px;
+    border: 2px solid black;
+    background-image: linear-gradient(0, red var(--color), white var(--color) 100%);
+}
+
+/* Media Query */
+
+@media (min-width: 900px) {
+    
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #running-man {
+        width: 45%;
+    }
+
+    #funds-section {
+        width: 45%;
+    }
+}
