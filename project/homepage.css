@@ -1,0 +1,410 @@
+/* Body */
+
+body {
+    background-color: var(--dark);
+}
+
+.typography {
+    color: var(--light);
+    font-family: Stencil Std, fantasy;
+}
+
+#heading {
+    font-size: 300%;
+    margin-left: 15px;
+}
+
+#main-characters {
+    background-color: var(--light-highlight);
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#main-locations {
+    background-color: var(--light-highlight);
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#season-characters {
+    background-color: var(--light-highlight);
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#character-heading {
+    text-shadow: 2px var(--dark);
+}
+
+#location-heading {
+    text-shadow: 2px var(--dark);
+}
+
+#season-locations {
+    background-color: var(--light-highlight);
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.season {
+    background-color: var(--light-highlight);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#weapons {
+    background-color: var(--light-highlight);
+    padding: 5px;
+    border-radius: 3px;
+}
+#armor {
+    background-color: var(--light-highlight);
+    padding: 5px;
+    border-radius: 3px;
+}
+#order-info {
+    background-color: var(--light-highlight);
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+#order {
+    background-color: var(--dark-highlight);
+    padding: 5px;
+}
+#complete-order {
+    margin-top: 10px;
+}
+#weapons-heading {
+    background-color: var(--light-highlight);
+    padding: 10px;
+    border-radius: 5px;
+}
+#armor-heading {
+    background-color: var(--light-highlight);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Navigation */
+
+#main-nav {
+    background-color: var(--dark-highlight);
+}
+#main-nav ul {
+    text-align: center;
+}
+#main-nav li {
+    list-style-type: none;
+}
+#main-nav a {
+    text-decoration: none;
+    color: var(--light);
+    font-size: xx-large;
+    font-family: Stencil Std, fantasy;
+    padding: 5px;
+    border-radius: 3px;
+}
+#main-nav li:hover {
+    background-image: url("../JoshC04.github.io/images/blood-hand.png");
+    background-size: 50px 50px;
+}
+
+#home-img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+/* Header */
+
+header {
+    background-color: var(--light-highlight);
+}
+
+/* Main */
+
+main {
+    background-color: var(--dark-highlight);
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#characters-main {
+    background-color: var(--dark);
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#left {
+    background-color: var(--light-highlight);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#right {
+    background-color: var(--light-highlight);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel {
+    background-color: var(--dark-highlight);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#props-display {
+    background-color: var(--dark-highlight);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#character-list {
+    padding: 5px;
+    border-radius: 3px;
+}
+#character-list li {
+    list-style-type: none;
+    background-color: var(--dark-highlight);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#location-list {
+    padding: 5px;
+    border-radius: 3px;
+} 
+#location-list li {
+    list-style-type: none;
+    background-color: var(--dark-highlight);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--light-highlight);
+    margin-top: 15px;
+    padding: 10px;
+}
+
+/* Color Scheme */
+
+:root {
+    --dark: #0D0B0A;
+    --light: #D9D5C5;
+    --highlight: #BFBCAE;
+    --dark-highlight: #400B0B;
+    --light-highlight: #8C3B3B;
+}
+
+/* Media Query */
+
+@media (min-width: 900px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Navigation */
+    #main-nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    #main-nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    #main-nav li {
+        display: flex;
+        width: 10%;
+    }
+
+    /* Body */
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #header-div {
+        display: flex;
+        width: 100%;
+    }
+
+    /* Main */
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .edited-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    #left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+    }
+
+    #right {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+    }
+
+    .carousel {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+    }
+
+    #props-display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #main-characters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #season-characters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    #character-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    #character-list li {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+    }
+
+    #location-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    #location-list li {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+    }
+    
+    #main-locations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #season-locations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .season {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .inner-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+
+    #props-main {
+        display: flex;
+        justify-content: space-between;
+    }
+    #props-display {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 75%;
+    }
+    #weapons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    #armor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    #order-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
+    }
+    #order {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 50%;
+    }
+    #buyer-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 45%;
+        width: 90%;
+    }
+    #complete-order {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
