@@ -1,0 +1,85 @@
+/* Body */
+
+body {
+    background-color: orangered;
+}
+
+/* Typography */
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* Main Content */
+
+.inner {
+    position: relative;
+    width: 30%;
+    margin-top: 10px;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90%;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+
+.inner:hover .hover {
+    opacity: 0.85;
+}
+
+#container {
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.decorate {
+    list-style-type: none;
+}
+
+/* Media Query */
+
+@media (min-width: 900px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 75%;
+    }
+
+    .decorate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
