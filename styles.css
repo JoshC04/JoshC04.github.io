@@ -123,6 +123,13 @@ img {
         width: 100%;
     }
 
+    #project-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
     .assignments {
         display: flex;
         flex-direction: column;
@@ -130,7 +137,7 @@ img {
     }
 
     .hidden {
-        display: none;
+        display: none !important;
     }
 
     #nav {
