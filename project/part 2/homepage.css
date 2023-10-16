@@ -6,6 +6,34 @@ body {
     margin: 0;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.stories-a {
+    text-decoration: none;
+}
+.stories-a:hover {
+    background-color: var(--dark);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.inner-image {
+    width: 180px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.inner-div {
+    background-color: var(--dark-highlight);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 header {
     padding: 0;
     margin: 0;
@@ -335,6 +363,7 @@ footer {
         width: 100%;
         height: 100%;
     }
+
     .image {
         width: 100%;
         height: 100%;
@@ -359,7 +388,7 @@ footer {
 
     footer {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         width: 100%;
     }
 
@@ -461,8 +490,7 @@ footer {
     #order {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        justify-content: top;
         width: 90%;
         height: 50%;
     }
@@ -479,10 +507,6 @@ footer {
         justify-content: space-between;
     }
 
-    .hidden {
-        display: none;
-    }
-
     #planes-div {
         width: 100%;
         height: 100%;
@@ -490,14 +514,14 @@ footer {
 
     #planes {
         width: 100%;
-        height: 30%;
+        height: auto;
     }
     #locations {
         width: 100%;
-        height: 30%;
+        height: auto;
     }
     #seasons {
         width: 100%;
-        height: 30%;
+        height: auto;
     }
 }
