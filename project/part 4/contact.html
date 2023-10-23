@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Aerial Vehicles of History - Contact Us</title>
+        <link rel="stylesheet" href="homepage.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="header-div">
+                <img id="home-img" src="../../images/plane-home.png">
+                <h1 id="heading" class="typography">Contact Us</h1>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="planes.html">Planes</a></li>
+                    <li><a href="helicopters.html">Helicopters</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="replicas.html">Replicas</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="profile-split">
+                <div id="containment">
+                <h1 class="typography" style="font-size: xx-large;">Contact Us</h1>
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="6fac7f13-255e-42e3-8823-463cf5f13166">
+                        <section class="form-organizer">
+                            <label for="name" class="typography">Name:</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+                        </section>
+                        <section class="form-organizer">
+                            <label for="email" class="typography">Email:</label>
+                            <input type="email" id="contact-email" name="email" placeholder="example-email@email.com" required>
+                        </section>
+                        <section class="form-organizer">
+                            <label for="message" class="typography">Message:</label>
+                            <textarea id="contact-message" name="message" placeholder="Your Message" required></textarea>
+                        </section>
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success"/>
+                        <input type="hidden" name="subject" value="Contact from Aerial Website"/>
+                        <input type="hidden" name="from_name" value="My Website"/>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div id="success" class="typography hidden"></div>
+            </section>
+            <section class="profile-split">
+                <img id="profile" src="../../images/Professional Profile.JPG">
+                <div id="bio-holder">
+                    <p id="biography" class="typography">Hi! My name is Joshua Cook, and I am a Computer Science major with a minor in Theatre at the University of South Carolina. I love playing games like Dungeons and Dragons, Magic the Gathering, and Cards Against Humanity, and I really enjoy hobbies like hiking and video gaming. My favorite food is hibachi, and I am terrified of bees. Contact me if you have any questions!</p>
+                </div>
+            </section>
+        </main>
+        <footer id="contact-footer">
+            <section class="profile-footer">
+                <h1 class="typography" style="font-size: xx-large;">Where are we located?</h1>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d780.5676282670291!2d-81.02743532141265!3d33.99432139364034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb3b57f9db97%3A0xa7e2d5484e3b0965!2sMcBryde!5e0!3m2!1sen!2sus!4v1698092210371!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section id="footer-info" class="profile-footer">
+                <h1 class="typography">by Joshua Cook</h1>
+                <h1 class="typography">CSCE 242</h1>
+                <h1 class="typography">Main-Project</h1>
+            </section>
+        </footer>
+        <script src="form.js"></script>
+    </body>
+</html>

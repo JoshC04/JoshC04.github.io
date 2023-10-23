@@ -1,0 +1,261 @@
+const hideBar = () => {
+    document.getElementById("main-nav").classList.toggle("hidden");
+}
+
+let count01 = 1;
+
+const slideshowplanes = () => {
+    const currentPlane = document.querySelector(`#planes :nth-child(${count01})`);
+    count01++;
+
+    //let nextPlane = currentPlane.nextElementSibling;
+    console.log(nextPlane);
+
+    if (nextPlane == null) {
+        nextPlane = document.querySelector("#planes :first-child");
+        count01 = 1;
+    }
+
+    currentPlane.classList.add("slideOut");
+    nextPlane.classList.add("slideIn");
+
+    currentPlane.addEventListener("animationend", () => {
+        currentPlane.classList.add("hidden");
+        currentPlane.classList.remove("slideOut");
+    });
+
+    /*nextPlane.addEventListener("animationend", () => {
+        nextPlane.classList.remove("hidden");
+        nextPlane.classList.remove("slideIn");
+    });*/
+}
+
+let count02 = 1;
+
+const slideshowhelis = () => {
+    const currentHeli = document.querySelector(`#helicopters :nth-child(${count02})`);
+    count02++;
+
+    //let nextHeli = currentHeli.nextElementSibling;
+
+    if (nextHeli == null) {
+        nextHeli = document.querySelector("#helicopters :first-child");
+        count02 = 1;
+    }
+
+    currentHeli.classList.add("slideOut");
+    nextHeli.classList.add("slideIn");
+
+    currentHeli.addEventListener("animationend", () => {
+        currentHeli.classList.add("hidden");
+        currentHeli.classList.remove("slideOut");
+    });
+
+    /*nextHeli.addEventListener("animationend", () => {
+        nextHeli.classList.remove("hidden");
+        nextHeli.classList.remove("slideIn");
+    });*/
+}
+
+let count03 = 1;
+
+const slideshowstories = () => {
+    const currentStory = document.querySelector(`#seasons :nth-child(${count03})`);
+    count03++;
+
+    //let nextStory = currentStory.nextElementSibling;
+
+    if (nextStory == null) {
+        nextStory = document.querySelector("#seasons :first-child");
+        count03 = 1;
+    }
+
+    currentStory.classList.add("slideOut");
+    nextStory.classList.add("slideIn");
+
+    currentStory.addEventListener("animationend", () => {
+        currentStory.classList.add("hidden");
+        currentStory.classList.remove("slideOut");
+    });
+
+    /*nextStory.addEventListener("animationend", () => {
+        nextStory.classList.remove("hidden");
+        nextStory.classList.remove("slideIn");
+    });*/
+}
+
+let count04 = 1;
+
+const slideshowreplicas = () => {
+    const currentReplica = document.querySelector(`#replicas :nth-child(${count04})`);
+    count04++;
+
+    //let nextReplica = currentReplica.nextElementSibling;
+
+    if (nextReplica == null) {
+        nextReplica = document.querySelector("#replicas :first-child");
+        count04 = 1;
+    }
+
+    currentReplica.classList.add("slideOut");
+    nextReplica.classList.add("slideIn");
+
+    currentReplica.addEventListener("animationend", () => {
+        currentReplica.classList.add("hidden");
+        currentReplica.classList.remove("slideOut");
+    });
+
+    /*nextReplica.addEventListener("animationend", () => {
+        nextReplica.classList.remove("hidden");
+        nextReplica.classList.remove("slideIn");
+    });*/
+}
+
+const addConcorde = () => {
+    const section = document.createElement("section");
+    section.innerHTML = "Concorde - $45"
+    section.classList.add("typography");
+
+    document.getElementById("order").appendChild(section);
+}
+
+const addApache = () => {
+    const section = document.createElement("section");
+    section.innerHTML = "Apache - $35"
+    section.classList.add("typography");
+
+    document.getElementById("order").appendChild(section);
+}
+
+const addR44 = () => {
+    const section = document.createElement("section");
+    section.innerHTML = "Robinson R44 - $50"
+    section.classList.add("typography");
+
+    document.getElementById("order").appendChild(section);
+}
+
+const add747 = () => {
+    const section = document.createElement("section");
+    section.innerHTML = "Boeing 747 - $60"
+    section.classList.add("typography");
+
+    document.getElementById("order").appendChild(section);
+}
+
+const addBlackbird = () => {
+    const section = document.createElement("section");
+    section.innerHTML = "SR-71 Blackbird - $55"
+    section.classList.add("typography");
+
+    document.getElementById("order").appendChild(section);
+}
+
+const addChinook = () => {
+    const section = document.createElement("section");
+    section.innerHTML = "Boeing Chinook  - $30"
+    section.classList.add("typography");
+
+    document.getElementById("order").appendChild(section);
+}
+
+const addCard = (event) => {
+
+        event.preventDefault();
+        const cards = document.getElementById("cards");
+
+        const c = document.createElement("div");
+        c.classList.add("saved-cards");
+        c.classList.add("card-format");
+        cards.append(c); 
+
+        const name = document.createElement("section");
+        name.innerHTML = document.getElementById("name").value;
+        name.classList.add("typography");
+        c.append(name);
+
+        const email = document.createElement("section");
+        email.innerHTML = document.getElementById("email-input").value;
+        email.classList.add("typography");
+        c.append(email);
+
+        const card = document.createElement("section");
+        card.innerHTML = document.getElementById("card").value;
+        card.classList.add("typography");
+        c.append(card);
+
+        const format = document.createElement("div");
+        format.classList.add("inner-format");
+        c.append(format);
+
+        const pin = document.createElement("section");
+        pin.innerHTML = document.getElementById("pin").value;
+        pin.classList.add("typography");
+        format.appendChild(pin);
+
+        const zip = document.createElement("section");
+        zip.innerHTML = document.getElementById("zip").value;
+        zip.classList.add("typography");
+        format.appendChild(zip);
+
+        setTimeout(function() {
+            document.getElementById("success").classList.remove("hidden");
+        }, 5000);
+
+        document.getElementById("buyer-info").reset();
+}
+
+const formSubmit = async (e) => {
+    e.preventDefault();
+
+    const contactForm = document.getElementById("contact-form");
+    const contactData = new FormData(contactForm);
+    const object = Object.fromEntries(contactData);
+    const json = JSON.stringify(object);
+    const result = document.getElementById("success");
+    result.innerHTML = "Please wait...";
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: json,
+        });
+        return response;
+    } catch (error) {
+        console.log(error);
+        document.getElementById("success").innerHTML = "Oops! There was a problem submitting your form";
+    }
+
+}
+
+const showMessageResult = async (e) => {
+    const result = document.getElementById("success");
+    let response = await formSubmit();
+    if (response.status == 200) {
+      result.innerHTML = "Your message was sent!";
+    } else {
+      result.innerHTML = "Oops! Your message could not be sent.";
+    }
+};
+
+document.getElementById("contact-form").onsubmit = showMessageResult;
+
+window.onload = () => {
+    document.getElementById("home-img").onclick = hideBar;
+    /*setInterval(slideshowplanes, 1000);
+    setInterval(slideshowhelis, 1000);
+    setInterval(slideshowstories, 1000);
+    setInterval(slideshowreplicas, 1000);*/
+    document.getElementById("concorde-image").onclick = addConcorde;
+    document.getElementById("apache-image").onclick = addApache;
+    document.getElementById("r44-image").onclick = addR44;
+    document.getElementById("747-image").onclick = add747;
+    document.getElementById("blackbird-image").onclick = addBlackbird;
+    document.getElementById("chinook-image").onclick = addChinook;
+
+    document.getElementById("buyer-info").onsubmit = addCard;
+}
