@@ -205,45 +205,6 @@ const addCard = (event) => {
         document.getElementById("buyer-info").reset();
 }
 
-const formSubmit = async (e) => {
-    e.preventDefault();
-
-    const contactForm = document.getElementById("contact-form");
-    const contactData = new FormData(contactForm);
-    const object = Object.fromEntries(contactData);
-    const json = JSON.stringify(object);
-    const result = document.getElementById("success");
-    result.innerHTML = "Please wait...";
-
-    try {
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-            },
-            body: json,
-        });
-        return response;
-    } catch (error) {
-        console.log(error);
-        document.getElementById("success").innerHTML = "Oops! There was a problem submitting your form";
-    }
-
-}
-
-const showMessageResult = async (e) => {
-    const result = document.getElementById("success");
-    let response = await formSubmit();
-    if (response.status == 200) {
-      result.innerHTML = "Your message was sent!";
-    } else {
-      result.innerHTML = "Oops! Your message could not be sent.";
-    }
-};
-
-document.getElementById("contact-form").onsubmit = showMessageResult;
-
 window.onload = () => {
     document.getElementById("home-img").onclick = hideBar;
     /*setInterval(slideshowplanes, 1000);
