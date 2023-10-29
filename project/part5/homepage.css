@@ -22,6 +22,11 @@ img {
     border-radius: 5px;
 }
 
+.stories-img {
+    width: 500px;
+    height: 300px;
+}
+
 .inner-image {
     width: 180px;
     height: 100px;

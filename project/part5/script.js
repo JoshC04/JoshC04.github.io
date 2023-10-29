@@ -207,10 +207,10 @@ const addCard = (event) => {
 
 window.onload = () => {
     document.getElementById("home-img").onclick = hideBar;
-    /*setInterval(slideshowplanes, 1000);
+    setInterval(slideshowplanes, 1000);
     setInterval(slideshowhelis, 1000);
     setInterval(slideshowstories, 1000);
-    setInterval(slideshowreplicas, 1000);*/
+    setInterval(slideshowreplicas, 1000);
     document.getElementById("concorde-image").onclick = addConcorde;
     document.getElementById("apache-image").onclick = addApache;
     document.getElementById("r44-image").onclick = addR44;
