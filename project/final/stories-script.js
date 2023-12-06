@@ -4,14 +4,14 @@ const hideBar = () => {
 
 const getStories = async () => {
     try {
-        const response = await fetch("https://joshc04.github.io/project/part5/stories.json");
+        const response = await fetch("https://joshc04.github.io/project/final/stories.json");
         const stories = await response.json();
         return stories;
     } catch (error) {
         console.log(error);
     }
 };
-
+ 
 const displayStories = async () => {
     const stories = await getStories();
     const storiesDisplay = document.getElementById("stories-main");
