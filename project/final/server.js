@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.static("public"));
 const mongoose = require("mongoose");
 
-const upload = multer({ dest: _dirname + "/images/" });
+const upload = multer({ dest: __dirname + "/images/" });
 
 mongoose
   .connect(
