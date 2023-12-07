@@ -4,11 +4,11 @@ const hideBar = () => {
 
 const getStories = async () => {
     try {
-        const response = await fetch("https://final-project-sujw.onrender.com/api/stories");
-        const stories = await response.json();
-        return stories;
-    } catch (error) {
-        console.log(error);
+        return (
+            await fetch("https://final-project-sujw.onrender.com/api/stories")
+        ).json();
+    } catch (err) {
+        console.error(err);
     }
 };
  
