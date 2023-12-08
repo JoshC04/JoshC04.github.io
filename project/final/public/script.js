@@ -19,209 +19,217 @@ const slideshowplanes = () => {
   currentPlane.classList.add("slideOut");
   nextPlane.classList.add("slideIn");
 
-  currentPlane.addEventListener("animationend", () => {
-    currentPlane.classList.add("hidden");
-    currentPlane.classList.remove("slideOut");
+  setTimeout(() => {
+    currentPlane.addEventListener(
+      "animationend",
+      () => {
+        currentPlane.classList.add("hidden");
+        currentPlane.classList.remove("slideOut");
+      },
+      0
+    );
   });
 
   nextPlane.addEventListener("animationend", () => {
-    nextPlane.classList.remove("hidden");
-    nextPlane.classList.remove("slideIn");
-  });
-};
-
-let count02 = 1;
-
-const slideshowhelis = () => {
-  const currentHeli = document.querySelector(
-    `#helicopters :nth-child(${count02})`
-  );
-  count02++;
-
-  let nextHeli = currentHeli.nextElementSibling;
-
-  if (nextHeli == null) {
-    nextHeli = document.querySelector("#helicopters :first-child");
-    count02 = 1;
-  }
-
-  currentHeli.classList.add("slideOut");
-  nextHeli.classList.add("slideIn");
-
-  currentHeli.addEventListener("animationend", () => {
-    currentHeli.classList.add("hidden");
-    currentHeli.classList.remove("slideOut");
+    setTimeout(() => {
+      nextPlane.classList.remove("hidden");
+      nextPlane.classList.remove("slideIn");
+    }, 0);
   });
 
-  nextHeli.addEventListener("animationend", () => {
-    nextHeli.classList.remove("hidden");
-    nextHeli.classList.remove("slideIn");
-  });
-};
+  let count02 = 1;
 
-let count03 = 1;
+  const slideshowhelis = () => {
+    const currentHeli = document.querySelector(
+      `#helicopters :nth-child(${count02})`
+    );
+    count02++;
 
-const slideshowstories = () => {
-  const currentStory = document.querySelector(
-    `#seasons :nth-child(${count03})`
-  );
-  count03++;
+    let nextHeli = currentHeli.nextElementSibling;
 
-  let nextStory = currentStory.nextElementSibling;
+    if (nextHeli == null) {
+      nextHeli = document.querySelector("#helicopters :first-child");
+      count02 = 1;
+    }
 
-  if (nextStory == null) {
-    nextStory = document.querySelector("#seasons :first-child");
-    count03 = 1;
-  }
+    currentHeli.classList.add("slideOut");
+    nextHeli.classList.add("slideIn");
 
-  currentStory.classList.add("slideOut");
-  nextStory.classList.add("slideIn");
+    currentHeli.addEventListener("animationend", () => {
+      currentHeli.classList.add("hidden");
+      currentHeli.classList.remove("slideOut");
+    });
 
-  currentStory.addEventListener("animationend", () => {
-    currentStory.classList.add("hidden");
-    currentStory.classList.remove("slideOut");
-  });
+    nextHeli.addEventListener("animationend", () => {
+      nextHeli.classList.remove("hidden");
+      nextHeli.classList.remove("slideIn");
+    });
+  };
 
-  nextStory.addEventListener("animationend", () => {
-    nextStory.classList.remove("hidden");
-    nextStory.classList.remove("slideIn");
-  });
-};
+  let count03 = 1;
 
-let count04 = 1;
+  const slideshowstories = () => {
+    const currentStory = document.querySelector(
+      `#seasons :nth-child(${count03})`
+    );
+    count03++;
 
-const slideshowreplicas = () => {
-  const currentReplica = document.querySelector(
-    `#replicas :nth-child(${count04})`
-  );
-  count04++;
+    let nextStory = currentStory.nextElementSibling;
 
-  let nextReplica = currentReplica.nextElementSibling;
+    if (nextStory == null) {
+      nextStory = document.querySelector("#seasons :first-child");
+      count03 = 1;
+    }
 
-  if (nextReplica == null) {
-    nextReplica = document.querySelector("#replicas :first-child");
-    count04 = 1;
-  }
+    currentStory.classList.add("slideOut");
+    nextStory.classList.add("slideIn");
 
-  currentReplica.classList.add("slideOut");
-  nextReplica.classList.add("slideIn");
+    currentStory.addEventListener("animationend", () => {
+      currentStory.classList.add("hidden");
+      currentStory.classList.remove("slideOut");
+    });
 
-  currentReplica.addEventListener("animationend", () => {
-    currentReplica.classList.add("hidden");
-    currentReplica.classList.remove("slideOut");
-  });
+    nextStory.addEventListener("animationend", () => {
+      nextStory.classList.remove("hidden");
+      nextStory.classList.remove("slideIn");
+    });
+  };
 
-  nextReplica.addEventListener("animationend", () => {
-    nextReplica.classList.remove("hidden");
-    nextReplica.classList.remove("slideIn");
-  });
-};
+  let count04 = 1;
 
-const addConcorde = () => {
-  const section = document.createElement("section");
-  section.innerHTML = "Concorde - $45";
-  section.classList.add("typography");
+  const slideshowreplicas = () => {
+    const currentReplica = document.querySelector(
+      `#replicas :nth-child(${count04})`
+    );
+    count04++;
 
-  document.getElementById("order").appendChild(section);
-};
+    let nextReplica = currentReplica.nextElementSibling;
 
-const addApache = () => {
-  const section = document.createElement("section");
-  section.innerHTML = "Apache - $35";
-  section.classList.add("typography");
+    if (nextReplica == null) {
+      nextReplica = document.querySelector("#replicas :first-child");
+      count04 = 1;
+    }
 
-  document.getElementById("order").appendChild(section);
-};
+    currentReplica.classList.add("slideOut");
+    nextReplica.classList.add("slideIn");
 
-const addR44 = () => {
-  const section = document.createElement("section");
-  section.innerHTML = "Robinson R44 - $50";
-  section.classList.add("typography");
+    currentReplica.addEventListener("animationend", () => {
+      currentReplica.classList.add("hidden");
+      currentReplica.classList.remove("slideOut");
+    });
 
-  document.getElementById("order").appendChild(section);
-};
+    nextReplica.addEventListener("animationend", () => {
+      nextReplica.classList.remove("hidden");
+      nextReplica.classList.remove("slideIn");
+    });
+  };
 
-const add747 = () => {
-  const section = document.createElement("section");
-  section.innerHTML = "Boeing 747 - $60";
-  section.classList.add("typography");
+  const addConcorde = () => {
+    const section = document.createElement("section");
+    section.innerHTML = "Concorde - $45";
+    section.classList.add("typography");
 
-  document.getElementById("order").appendChild(section);
-};
+    document.getElementById("order").appendChild(section);
+  };
 
-const addBlackbird = () => {
-  const section = document.createElement("section");
-  section.innerHTML = "SR-71 Blackbird - $55";
-  section.classList.add("typography");
+  const addApache = () => {
+    const section = document.createElement("section");
+    section.innerHTML = "Apache - $35";
+    section.classList.add("typography");
 
-  document.getElementById("order").appendChild(section);
-};
+    document.getElementById("order").appendChild(section);
+  };
 
-const addChinook = () => {
-  const section = document.createElement("section");
-  section.innerHTML = "Boeing Chinook  - $30";
-  section.classList.add("typography");
+  const addR44 = () => {
+    const section = document.createElement("section");
+    section.innerHTML = "Robinson R44 - $50";
+    section.classList.add("typography");
 
-  document.getElementById("order").appendChild(section);
-};
+    document.getElementById("order").appendChild(section);
+  };
 
-const addCard = (event) => {
-  event.preventDefault();
-  const cards = document.getElementById("cards");
+  const add747 = () => {
+    const section = document.createElement("section");
+    section.innerHTML = "Boeing 747 - $60";
+    section.classList.add("typography");
 
-  const c = document.createElement("div");
-  c.classList.add("saved-cards");
-  c.classList.add("card-format");
-  cards.append(c);
+    document.getElementById("order").appendChild(section);
+  };
 
-  const name = document.createElement("section");
-  name.innerHTML = document.getElementById("name").value;
-  name.classList.add("typography");
-  c.append(name);
+  const addBlackbird = () => {
+    const section = document.createElement("section");
+    section.innerHTML = "SR-71 Blackbird - $55";
+    section.classList.add("typography");
 
-  const email = document.createElement("section");
-  email.innerHTML = document.getElementById("email-input").value;
-  email.classList.add("typography");
-  c.append(email);
+    document.getElementById("order").appendChild(section);
+  };
 
-  const card = document.createElement("section");
-  card.innerHTML = document.getElementById("card").value;
-  card.classList.add("typography");
-  c.append(card);
+  const addChinook = () => {
+    const section = document.createElement("section");
+    section.innerHTML = "Boeing Chinook  - $30";
+    section.classList.add("typography");
 
-  const format = document.createElement("div");
-  format.classList.add("inner-format");
-  c.append(format);
+    document.getElementById("order").appendChild(section);
+  };
 
-  const pin = document.createElement("section");
-  pin.innerHTML = document.getElementById("pin").value;
-  pin.classList.add("typography");
-  format.appendChild(pin);
+  const addCard = (event) => {
+    event.preventDefault();
+    const cards = document.getElementById("cards");
 
-  const zip = document.createElement("section");
-  zip.innerHTML = document.getElementById("zip").value;
-  zip.classList.add("typography");
-  format.appendChild(zip);
+    const c = document.createElement("div");
+    c.classList.add("saved-cards");
+    c.classList.add("card-format");
+    cards.append(c);
 
-  setTimeout(function () {
-    document.getElementById("success").classList.remove("hidden");
-  }, 5000);
+    const name = document.createElement("section");
+    name.innerHTML = document.getElementById("name").value;
+    name.classList.add("typography");
+    c.append(name);
 
-  document.getElementById("buyer-info").reset();
-};
+    const email = document.createElement("section");
+    email.innerHTML = document.getElementById("email-input").value;
+    email.classList.add("typography");
+    c.append(email);
 
-window.onload = () => {
-  document.getElementById("home-img").onclick = hideBar;
-  setInterval(slideshowplanes, 1000);
-  setInterval(slideshowhelis, 1000);
-  setInterval(slideshowstories, 1000);
-  setInterval(slideshowreplicas, 1000);
-  document.getElementById("concorde-image").onclick = addConcorde;
-  document.getElementById("apache-image").onclick = addApache;
-  document.getElementById("r44-image").onclick = addR44;
-  document.getElementById("747-image").onclick = add747;
-  document.getElementById("blackbird-image").onclick = addBlackbird;
-  document.getElementById("chinook-image").onclick = addChinook;
+    const card = document.createElement("section");
+    card.innerHTML = document.getElementById("card").value;
+    card.classList.add("typography");
+    c.append(card);
 
-  document.getElementById("buyer-info").onsubmit = addCard;
+    const format = document.createElement("div");
+    format.classList.add("inner-format");
+    c.append(format);
+
+    const pin = document.createElement("section");
+    pin.innerHTML = document.getElementById("pin").value;
+    pin.classList.add("typography");
+    format.appendChild(pin);
+
+    const zip = document.createElement("section");
+    zip.innerHTML = document.getElementById("zip").value;
+    zip.classList.add("typography");
+    format.appendChild(zip);
+
+    setTimeout(function () {
+      document.getElementById("success").classList.remove("hidden");
+    }, 5000);
+
+    document.getElementById("buyer-info").reset();
+  };
+
+  window.onload = () => {
+    document.getElementById("home-img").onclick = hideBar;
+    setInterval(slideshowplanes, 1000);
+    setInterval(slideshowhelis, 1000);
+    setInterval(slideshowstories, 1000);
+    setInterval(slideshowreplicas, 1000);
+    document.getElementById("concorde-image").onclick = addConcorde;
+    document.getElementById("apache-image").onclick = addApache;
+    document.getElementById("r44-image").onclick = addR44;
+    document.getElementById("747-image").onclick = add747;
+    document.getElementById("blackbird-image").onclick = addBlackbird;
+    document.getElementById("chinook-image").onclick = addChinook;
+
+    document.getElementById("buyer-info").onsubmit = addCard;
+  };
 };
