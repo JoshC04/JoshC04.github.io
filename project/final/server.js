@@ -59,7 +59,7 @@ const getStories = async (res) => {
   res.send(stories);
 };
 
-app.post("/api/stories", upload.single("image"), async (req, res) => {
+app.post("/api/stories", upload.single("img"), (req, res) => {
   const validate = validateStory(req.body);
 
   if (validate.error) {
