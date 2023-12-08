@@ -26,28 +26,30 @@ const storySchema = new mongoose.Schema({
 
 const Story = mongoose.model("Story", storySchema);
 
+const path = require("path");
+
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(path.join(__dirname + "/index.html"));
 });
 
 app.get("/planes", (req, res) => {
-  res.sendFile(__dirname + "/planes.html");
+  res.sendFile(path.join(__dirname + "/planes.html"));
 });
 
 app.get("/helicopters", (req, res) => {
-  res.sendFile(__dirname + "/helicopters.html");
+  res.sendFile(path.join(__dirname + "/helicopters.html"));
 });
 
 app.get("/replicas", (req, res) => {
-  res.sendFile(__dirname + "/replicas.html");
+  res.sendFile(path.join(__dirname + "/replicas.html"));
 });
 
 app.get("/contact", (req, res) => {
-  res.sendFile(__dirname + "/contact.html");
+  res.sendFile(path.join(__dirname + "/contact.html"));
 });
 
 app.get("/stories", (req, res) => {
-  res.sendFile(__dirname + "/stories.html");
+  res.sendFile(path.join(__dirname + "/stories.html"));
 });
 
 app.get("/api/stories", async (req, res) => {
@@ -59,7 +61,7 @@ const getStories = async (res) => {
   res.send(stories);
 };
 
-app.post("/api/stories", upload.single("img"), (req, res) => {
+app.post("/api/stories", upload.single("image"), async (req, res) => {
   const validate = validateStory(req.body);
 
   if (validate.error) {
