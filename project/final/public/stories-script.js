@@ -66,6 +66,15 @@ const showHideAdd = (e) => {
   resetForm();
 };
 
+const displayAddError = () => {
+  const errorDiv = document.getElementById("story-form-container");
+
+  const error = document.createElement("h2");
+  error.innerHTML = "Error adding story. Please try again.";
+  error.classList.add("typography");
+  errorDiv.appendChild(error);
+};
+
 window.onload = () => {
   document.getElementById("home-img").onclick = hideBar;
   document.getElementById("add-story-btn").onclick = showHideAdd;
