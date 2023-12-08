@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Aerial Vehicles of History - Stories</title>
-        <link rel="stylesheet" href="homepage.css">
-        <script src="stories-script.js"></script>
-    </head>
-    <body>
-        <header>
-            <div id="header-div">
-                <img id="home-img" src="../../images/plane-home.png">
-                <h1 id="heading" class="typography">Aerial Vehicles of History - Stories</h1>
-            </div>
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="planes.html">Planes</a></li>
-                    <li><a href="helicopters.html">Helicopters</a></li>
-                    <li><a href="stories.html">Stories</a></li>
-                    <li><a href="replicas.html">Replicas</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main id="stories-main" class="edited-main"></main>
-        <footer>
-            <h1 class="typography">by Joshua Cook</h1>
-            <h1 class="typography">CSCE 242</h1>
-            <h1 class="typography">Main-Project</h1>
-        </footer>
-    </body>
+  <head>
+    <title>Aerial Vehicles of History - Stories</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <script src="stories-script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="header-div">
+        <img id="home-img" src="../../images/plane-home.png" />
+        <h1 id="heading" class="typography">
+          Aerial Vehicles of History - Stories
+        </h1>
+      </div>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planes.html">Planes</a></li>
+          <li><a href="helicopters.html">Helicopters</a></li>
+          <li><a href="stories.html">Stories</a></li>
+          <li><a href="replicas.html">Replicas</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="stories-main" class="edited-main"></main>
+
+    <button id="add-story-btn">Add Story</button>
+    <div id="story-form-container" class="hidden">
+      <h3 id="edit-story-title" class="typography">Story</h3>
+      <span class="close typography">X</span>
+      <form id="story-form" method="post">
+        <input type="hidden" name="_id" value="-1" />
+        <label for="title" class="typography">Story Title:</label>
+        <input type="text" name="title" id="title" required />
+        <label for="description" class="typography">Description:</label>
+        <textarea name="description" id="description" required></textarea>
+        <label for="image" class="typography">Story Image:</label>
+        <input type="file" name="image" id="image" required />
+        <label for="source" class="typography">Story Source:</label>
+        <input type="text" name="source" id="source" required />
+        <button type="submit" id="submit-story-btn">Submit</button>
+      </form>
+    </div>
+
+    <footer>
+      <h1 class="typography">by Joshua Cook</h1>
+      <h1 class="typography">CSCE 242</h1>
+      <h1 class="typography">Main-Project</h1>
+    </footer>
+  </body>
+</html>

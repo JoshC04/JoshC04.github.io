@@ -1,701 +1,730 @@
 /* Body */
 
 body {
-    background-color: var(--dark);
-    padding: 0;
-    margin: 0;
+  background-color: var(--dark);
+  padding: 0;
+  margin: 0;
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .stories-a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .stories-a:hover {
-    background-color: var(--dark);
-    padding-left: 5px;
-    border-radius: 5px;
+  background-color: var(--dark);
+  padding-left: 5px;
+  border-radius: 5px;
 }
 
 .stories-img {
-    width: 500px;
-    height: 300px;
+  width: 500px;
+  height: 300px;
 }
 
 .inner-image {
-    width: 180px;
-    height: 100px;
-    object-fit: cover;
+  width: 180px;
+  height: 100px;
+  object-fit: cover;
 }
 
 .inner-div {
-    background-color: var(--dark-highlight);
-    padding: 10px;
-    border-radius: 5px;
+  background-color: var(--dark-highlight);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 header {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .typography {
-    color: var(--light);
-    font-family: Stencil Std, fantasy;
+  color: var(--light);
+  font-family: Stencil Std, fantasy;
 }
 
 .carousel-typography {
-    color: var(--dark);
-    font-family: Stencil Std, fantasy;
+  color: var(--dark);
+  font-family: Stencil Std, fantasy;
 }
 
 #heading {
-    font-size: 300%;
-    margin-left: 15px;
+  font-size: 300%;
+  margin-left: 15px;
 }
 
 #main-characters {
-    background-color: var(--light-highlight);
-    margin-top: 15px;
-    padding: 10px;
+  background-color: var(--light-highlight);
+  margin-top: 15px;
+  padding: 10px;
 }
 
 #main-locations {
-    background-color: var(--light-highlight);
-    margin-top: 15px;
-    padding: 10px;
+  background-color: var(--light-highlight);
+  margin-top: 15px;
+  padding: 10px;
 }
 
 #season-characters {
-    background-color: var(--light-highlight);
-    margin-top: 15px;
-    padding: 10px;
+  background-color: var(--light-highlight);
+  margin-top: 15px;
+  padding: 10px;
 }
 
 #character-heading {
-    text-shadow: 2px var(--dark);
+  text-shadow: 2px var(--dark);
 }
 
 #location-heading {
-    text-shadow: 2px var(--dark);
+  text-shadow: 2px var(--dark);
 }
 
 #season-locations {
-    background-color: var(--light-highlight);
-    margin-top: 15px;
-    padding: 10px;
+  background-color: var(--light-highlight);
+  margin-top: 15px;
+  padding: 10px;
 }
 
 .season {
-    background-color: var(--light-highlight);
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
+  background-color: var(--light-highlight);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 #weapons {
-    background-color: var(--light-highlight);
-    padding: 5px;
-    border-radius: 3px;
+  background-color: var(--light-highlight);
+  padding: 5px;
+  border-radius: 3px;
 }
 #armor {
-    background-color: var(--light-highlight);
-    padding: 5px;
-    border-radius: 3px;
+  background-color: var(--light-highlight);
+  padding: 5px;
+  border-radius: 3px;
 }
 #order-info {
-    background-color: var(--light-highlight);
-    padding: 5px;
-    border-radius: 3px;
-    margin-top: 10px;
+  background-color: var(--light-highlight);
+  padding: 5px;
+  border-radius: 3px;
+  margin-top: 10px;
 }
 #order {
-    background-color: var(--dark-highlight);
-    padding: 5px;
+  background-color: var(--dark-highlight);
+  padding: 5px;
 }
 #complete-order {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 #weapons-heading {
-    background-color: var(--light-highlight);
-    padding: 10px;
-    border-radius: 5px;
+  background-color: var(--light-highlight);
+  padding: 10px;
+  border-radius: 5px;
 }
 #armor-heading {
-    background-color: var(--light-highlight);
-    padding: 10px;
-    border-radius: 5px;
+  background-color: var(--light-highlight);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .hidden {
-    display: none;
+  display: none !important;
+}
+
+#story-form-container {
+  background-color: var(--dark-highlight);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#add-story-btn {
+  font-size: xx-large;
+  margin: 10px;
+}
+#add-story-btn:hover {
+  background-color: var(--dark-highlight);
+  color: var(--highlight);
 }
 
 /* Animation */
 
 .slideIn {
-    animation-name: in;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+  animation-name: in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .slideOut {
-    animation-name: out;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+  animation-name: out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes out {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Navigation */
 
 #main-nav {
-    background-color: var(--dark-highlight);
+  background-color: var(--dark-highlight);
 }
 #main-nav ul {
-    text-align: center;
+  text-align: center;
 }
 #main-nav li {
-    list-style-type: none;
+  list-style-type: none;
 }
 #main-nav a {
-    text-decoration: none;
-    color: var(--dark);
-    font-size: xx-large;
-    font-family: Stencil Std, fantasy;
-    padding: 5px;
-    border-radius: 3px;
+  text-decoration: none;
+  color: var(--dark);
+  font-size: xx-large;
+  font-family: Stencil Std, fantasy;
+  padding: 5px;
+  border-radius: 3px;
 }
 #main-nav li:hover {
-    background-image: url("../../images/cloud-hover.webp");
-    background-size:cover;
-    color: var(--dark);
+  background-image: url("../../images/cloud-hover.webp");
+  background-size: cover;
+  color: var(--dark);
 }
 
 #home-img {
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
 }
 
 /* Header */
 
 header {
-    background-color: var(--light-highlight);
+  background-color: var(--light-highlight);
 }
 
 /* Main */
 
 main {
-    background-color: var(--dark-highlight);
-    margin-top: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  background-color: var(--dark-highlight);
+  margin-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #characters-main {
-    background-color: var(--dark);
-    margin-top: 15px;
-    padding: 10px;
+  background-color: var(--dark);
+  margin-top: 15px;
+  padding: 10px;
 }
 
 #left {
-    background-color: var(--light-highlight);
-    padding: 10px;
-    border-radius: 5px;
+  background-color: var(--light-highlight);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 #right {
-    background-color: var(--light-highlight);
-    padding: 10px;
-    border-radius: 5px;
+  background-color: var(--light-highlight);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .carousel {
-    background-color: var(--dark-highlight);
-    border-radius: 10px;
+  background-color: var(--dark-highlight);
+  border-radius: 10px;
 }
 
 #props-display {
-    background-color: var(--dark-highlight);
-    padding: 10px;
-    border-radius: 5px;
+  background-color: var(--dark-highlight);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 #character-list {
-    padding: 5px;
-    border-radius: 3px;
+  padding: 5px;
+  border-radius: 3px;
 }
 #character-list li {
-    list-style-type: none;
-    background-color: var(--dark-highlight);
-    padding: 5px;
-    border-radius: 3px;
+  list-style-type: none;
+  background-color: var(--dark-highlight);
+  padding: 5px;
+  border-radius: 3px;
 }
 
 #location-list {
-    padding: 5px;
-    border-radius: 3px;
-} 
+  padding: 5px;
+  border-radius: 3px;
+}
 #location-list li {
-    list-style-type: none;
-    background-color: var(--dark-highlight);
-    padding: 5px;
-    border-radius: 3px;
+  list-style-type: none;
+  background-color: var(--dark-highlight);
+  padding: 5px;
+  border-radius: 3px;
 }
 
 /* Footer */
 
 footer {
-    background-color: var(--light-highlight);
-    margin-top: 15px;
-    padding-top: 10px;
+  background-color: var(--light-highlight);
+  margin-top: 15px;
+  padding-top: 10px;
 }
 
 /* Color Scheme */
 
 :root {
-    --dark: #003153;
-    --light: #91D7F2;
-    --highlight: #FFFFFF;
-    --dark-highlight: #A63C3C;
-    --light-highlight: #F2594B;
+  --dark: #003153;
+  --light: #91d7f2;
+  --highlight: #ffffff;
+  --dark-highlight: #a63c3c;
+  --light-highlight: #f2594b;
 }
 
 /* Input Forms */
 
 .saved-cards {
-    background-color: var(--dark-highlight);
-    padding: 5px;
-    border-radius: 3px;
-    margin-top: 10px;
+  background-color: var(--dark-highlight);
+  padding: 5px;
+  border-radius: 3px;
+  margin-top: 10px;
 }
 
 button {
-    background-color: var(--light);
-    color: var(--dark);
-    font-family: Stencil Std, fantasy;
+  background-color: var(--light);
+  color: var(--dark);
+  font-family: Stencil Std, fantasy;
 }
 button:hover {
-    background-color: var(--dark);
-    color: var(--highlight);
+  background-color: var(--dark);
+  color: var(--highlight);
 }
 
 /* Contact Us */
 
 .profile-split {
-    background-color: var(--light-highlight);
-    border-radius: 10px;
+  background-color: var(--light-highlight);
+  border-radius: 10px;
 }
 
 #profile {
-    border-style: solid;
-    border-width: 5px;
-    border-color: var(--light);
-    margin: 5px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--light);
+  margin: 5px;
 }
 
 #bio-holder {
-    background-color: var(--dark-highlight);
-    padding: 10px;
-    border-radius: 5px;
-    margin: 5px;
+  background-color: var(--dark-highlight);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
 }
 
 #biography {
-    text-align: center;
+  text-align: center;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 #success {
-    background-color: var(--dark);
-    padding: 5px;
-    border-radius: 5px;
-    margin-top: 10px;
+  background-color: var(--dark);
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 /* Map */
 
 #map {
-    display: block;
-    max-width: 100%;
-    min-width: 40%;
-    border-style: solid;
-    border-width: 5px;
-    border-color: var(--light);
-    margin: 5px;
+  display: block;
+  max-width: 100%;
+  min-width: 40%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--light);
+  margin: 5px;
 }
 
 /* Media Query */
 
 @media (min-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
+  /* Navigation */
+  #main-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  #main-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #main-nav li {
+    display: flex;
+    width: 10%;
+  }
 
-    /* Navigation */
-    #main-nav {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    #main-nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    #main-nav li {
-        display: flex;
-        width: 10%;
-    }
+  /* Body */
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #header-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
 
-    /* Body */
-    header {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    #header-div {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
+  /* Main */
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 
-    /* Main */
-    main {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-    }
+  .edited-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 
-    .edited-main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 100%;
-    }
+  #left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+  }
 
-    #left {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 70%;
-    }
+  #right {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
 
-    #right {
-        display: flex;
-        flex-direction: column;
-        width: 20%;
-    }
+  .carousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
 
-    .carousel {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-    }
+  .planes-carousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
 
-    .planes-carousel {
-        display: flex;
-        width: 100%;
-        height: 100%;
-    }
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .carousel-typography {
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 5px;
+  }
 
-    .image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-    }
-    .carousel-typography {
-        z-index: 9;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        margin: 5px;
-    }
+  #props-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+  }
 
-    #props-display {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height: 90%;
-    }
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 
-    footer {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-    }
+  #main-characters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  #season-characters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 
-    #main-characters {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    #season-characters {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-    }
+  #character-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #character-list li {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+  }
 
-    #character-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    #character-list li {
-        display: flex;
-        flex-direction: column;
-        width: 15%;
-    }
+  #location-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #location-list li {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+  }
 
-    #location-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    #location-list li {
-        display: flex;
-        flex-direction: column;
-        width: 15%;
-    }
-    
-    #main-locations {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    #season-locations {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-    }
+  #main-locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  #season-locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 
-    .season {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .inner-div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 50%;
-    }
+  .season {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .inner-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+  }
 
-    #props-main {
-        display: flex;
-        justify-content: space-between;
-    }
-    #props-display {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 75%;
-    }
-    #weapons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    #armor {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    #order-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 20%;
-    }
-    #order {
-        display: flex;
-        flex-direction: column;
-        justify-content: top;
-        width: 90%;
-        height: 50%;
-    }
-    #buyer-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 45%;
-        width: 90%;
-    }
-    #complete-order {
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        justify-content: space-between;
-    }
+  #props-main {
+    display: flex;
+    justify-content: space-between;
+  }
+  #props-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+  }
+  #weapons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #armor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #order-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+  }
+  #order {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    width: 90%;
+    height: 50%;
+  }
+  #buyer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 45%;
+    width: 90%;
+  }
+  #complete-order {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+  }
 
-    #pin-zip {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-    #pin-num {
-        display: flex;
-        width: 45%;
-        flex-direction: column;
-    }
-    #zip-num {
-        display: flex;
-        width: 45%;
-        flex-direction: column;
-    }
-    #card-num {
-        display: flex;
-        flex-direction: column;
-    }
-    #email-input {
-        display: flex;
-        flex-direction: column;
-    }
-    #name-input {
-        display: flex;
-        flex-direction: column;
-    }
+  #pin-zip {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  #pin-num {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+  }
+  #zip-num {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+  }
+  #card-num {
+    display: flex;
+    flex-direction: column;
+  }
+  #email-input {
+    display: flex;
+    flex-direction: column;
+  }
+  #name-input {
+    display: flex;
+    flex-direction: column;
+  }
 
-    #planes-div {
-        width: 100%;
-        height: 100%;
-    }
+  #planes-div {
+    width: 100%;
+    height: 100%;
+  }
 
-    #planes {
-        width: 100%;
-        height: auto;
-    }
-    #locations {
-        width: 100%;
-        height: auto;
-    }
-    #seasons {
-        width: 100%;
-        height: auto;
-    }
+  #planes {
+    width: 100%;
+    height: auto;
+  }
+  #locations {
+    width: 100%;
+    height: auto;
+  }
+  #seasons {
+    width: 100%;
+    height: auto;
+  }
 
-    .card-format {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-    }
+  .card-format {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
 
-    .saved-cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 95%;
-    }
+  .saved-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 95%;
+  }
 
-    .inner-format {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .inner-format {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .profile-split {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 45%;
-    }
-    #containment {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-    }
-    #contact-form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    #profile {
-        width: 50%;
-        height: auto;
-    }
-    #bio-holder {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-    }
-    .form-organizer {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
-    textarea {
-        height: 300px;
-    }
-    #succes {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 25%;
-    }
-    #contact-footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .profile-footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #footer-info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+  .profile-split {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+  }
+  #containment {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #profile {
+    width: 50%;
+    height: auto;
+  }
+  #bio-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .form-organizer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  textarea {
+    height: 300px;
+  }
+  #succes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25%;
+  }
+  #contact-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .profile-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #story-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45%;
+    height: auto;
+  }
+
+  #story-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 }

@@ -53,7 +53,24 @@ const getStoriesContent = (story) => {
   return section;
 };
 
+const resetForm = () => {
+  const form = document.getElementById("story-form");
+  form.reset();
+  form._id.value = -1;
+};
+
+const showHideAdd = (e) => {
+  e.preventDefault();
+  document.querySelector("#story-form-container").classList.remove("hidden");
+  document.getElementById("edit-story-title").innerHTML = "Add Story";
+  resetForm();
+};
+
 window.onload = () => {
   document.getElementById("home-img").onclick = hideBar;
+  document.getElementById("add-story-btn").onclick = showHideAdd;
+  document.querySelector(".close").onclick = () => {
+    document.querySelector("#story-form-container").classList.add("hidden");
+  };
   displayStories();
 };
