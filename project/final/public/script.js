@@ -8,7 +8,7 @@ const slideshowplanes = () => {
   const currentPlane = document.querySelector(`#planes :nth-child(${count01})`);
   count01++;
 
-  //let nextPlane = currentPlane.nextElementSibling;
+  let nextPlane = currentPlane.nextElementSibling;
   console.log(nextPlane);
 
   if (nextPlane == null) {
@@ -38,7 +38,7 @@ const slideshowhelis = () => {
   );
   count02++;
 
-  //let nextHeli = currentHeli.nextElementSibling;
+  let nextHeli = currentHeli.nextElementSibling;
 
   if (nextHeli == null) {
     nextHeli = document.querySelector("#helicopters :first-child");
@@ -67,7 +67,7 @@ const slideshowstories = () => {
   );
   count03++;
 
-  //let nextStory = currentStory.nextElementSibling;
+  let nextStory = currentStory.nextElementSibling;
 
   if (nextStory == null) {
     nextStory = document.querySelector("#seasons :first-child");
@@ -96,7 +96,7 @@ const slideshowreplicas = () => {
   );
   count04++;
 
-  //let nextReplica = currentReplica.nextElementSibling;
+  let nextReplica = currentReplica.nextElementSibling;
 
   if (nextReplica == null) {
     nextReplica = document.querySelector("#replicas :first-child");
