@@ -4,9 +4,7 @@ const hideBar = () => {
 
 const getStories = async () => {
   try {
-    const response = await fetch(
-      "https://joshc04.github.io/project/final/stories.json"
-    );
+    const response = await fetch("api/stories");
     const stories = await response.json();
     return stories;
   } catch (error) {
